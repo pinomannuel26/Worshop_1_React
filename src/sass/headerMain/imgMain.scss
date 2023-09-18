@@ -1,0 +1,16 @@
+.ImgMain
+{
+    margin: 7rem 7rem;
+    height: 60vh;
+    position: absolute;
+    z-index: 0;
+
+    @media screen and (max-width: 1024px)
+    {
+        width: 90%;
+        position: relative;
+        margin: 4rem 1.5rem 1rem 1.5rem;
+        height: 40vh;
+        
+    }
+}

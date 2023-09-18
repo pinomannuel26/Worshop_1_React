@@ -1,0 +1,10 @@
+.headerMain
+{
+    height: 85vh;
+    margin-left: 8%;
+    @media screen and (max-width: 1024px)
+    {
+        margin-left: 0;
+       text-align: center;
+    }
+}
