@@ -1,0 +1,29 @@
+.headerTexto
+{
+    border: 1px solid white;
+    width: 40%; 
+    margin-top: 2.5rem;
+    margin-left: 11rem;
+    &--titulo
+    {
+        text-transform: uppercase;
+        color: white;
+        font-size: 4.5rem;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 100;
+        margin: 0.5rem 0;
+    }
+
+    @media screen and (max-width: 1024px)
+    {
+        width: 90%; 
+        margin: 25% 1.5rem;
+        &--titulo
+        {
+            
+            font-size: 2.8rem;
+            margin: 0.5rem 0;
+            padding: 0 1rem;
+        }
+    }
+}

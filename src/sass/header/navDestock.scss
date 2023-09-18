@@ -1,0 +1,63 @@
+.navDestock
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 11rem;
+    &--logo:hover
+    {
+        cursor: pointer;
+    }
+    &--menuHamburguesa
+    {
+        display: none;
+
+    }
+   
+    &__navegacion
+    {    
+        display: flex;
+        list-style: none;
+        &--link
+        {
+            font-size: 1.1rem;
+            margin-right: .7rem;
+            margin-bottom: .7rem;
+            margin-left: .7rem;
+            & a 
+            {
+                text-decoration: none;
+                color: white;
+                &:hover
+                {
+                    cursor: pointer;
+                    border-bottom: 3px solid white;
+                }
+            }
+            
+        }
+        
+        
+    }
+    @media screen and (max-width: 1024px)
+    {
+        width: 91%;
+        margin-left: 1.5rem;
+        align-items: center;
+               
+        &--logo
+        {
+            width: 40vw;
+            
+        }
+        &--menuHamburguesa
+            {
+                display: block;
+                margin-left: 11rem;
+            }
+        &__navegacion
+        {    
+           display: none;
+                       
+        }  
+    }
+}
