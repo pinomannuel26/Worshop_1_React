@@ -1,5 +1,6 @@
 import Header from "./Components/Header/Header"
 import HeaderMain from "./Components/HeaderMain/HeaderMain"
+import Creations from "./Components/bodyMain/Creations"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header/>
       <HeaderMain/>
+      <Creations/>
     </>
   )
 }
