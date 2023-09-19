@@ -11,6 +11,7 @@ $mobile-screen: 375px;
         display: none;
         @media screen and (max-width: 1024px)
         {
+            
             display: block;
             width: 9rem;
             height: 3rem;
@@ -62,6 +63,7 @@ $mobile-screen: 375px;
     }
     @media screen and (max-width: 1024px)
     {
+        
         display: block;
         width: 100%;
         h1 {

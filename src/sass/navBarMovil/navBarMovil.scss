@@ -1,0 +1,47 @@
+.navMovil
+{
+    display: none;
+    @media screen and (max-width: 1024px)
+    {
+        margin: -8px;
+        position: absolute;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        &__icon
+        {
+            margin: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:hover
+            {
+                cursor: pointer;
+            }
+        }
+        &__navegacion
+        {
+            list-style: none;
+            margin: 25% auto;
+            font-size: 2rem;
+
+            &--link 
+            {
+                margin-bottom: 1rem;
+                & a 
+                {
+                    color: hsl(0, 0%, 55%);
+                    text-decoration: none;
+                    font-family:'Montserrat', sans-serif;
+                    font-weight: 100;
+
+                    &:hover
+                    {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

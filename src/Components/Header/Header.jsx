@@ -1,10 +1,13 @@
+
 import NavDestock from "./NavDestock";
 import HeaderTexto from "./HeaderTexto";
 import '../../sass/header/header.scss'
-const Header =()=>{
+const Header =(props)=>{
+    
     return(
         <header className="header">
-            <NavDestock/>
+            
+            <NavDestock cambiarMostrar={props.cambiarMostrar}/>
             <HeaderTexto/>
         </header>
     )
