@@ -1,0 +1,46 @@
+.footer{
+  background-color: black;
+  padding: 2rem 7rem;
+  &__logos{
+    display: flex;
+    justify-content: space-between;
+    &__redes-sociales{
+      width: 14rem;
+      display: flex;
+      justify-content: space-around;
+
+    }
+  }
+  &__texto{
+    display:flex;
+    justify-content: space-between;
+    &__navegacion{
+      display: flex;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+      &--link{
+        font-size: 1.1rem;
+        margin-right: .7rem;
+        margin-bottom: .7rem;
+        
+        & a{
+          text-decoration: none;
+          color: white;
+          &:hover{
+            cursor: pointer;
+            border-bottom: 3px solid white;
+          }
+        }
+      
+      }
+     
+    }
+    &--parrafo{
+      color: white;
+   
+      
+    }
+  }
+  
+}
