@@ -12,7 +12,7 @@ $mobile-screen: 375px;
         @media screen and (max-width: 1024px)
         {
             display: block;
-            width: 7rem;
+            width: 9rem;
             height: 3rem;
             background-color: white;
             border-radius: 3px;
@@ -67,7 +67,9 @@ $mobile-screen: 375px;
         h1 {
             display: flex;
             justify-content: center;
-            text-align: center;           
+            text-align: center;   
+            margin-top: 4rem;
+            margin-bottom: 2rem;
         }
         
         button{
@@ -103,7 +105,7 @@ $mobile-screen: 375px;
             @media screen and (max-width: 1024px)
             {
                 width: 45%;
-                top: 20%;
+                top: 10%;
                 left: 3%;
                 font-size: 30px;
             }
