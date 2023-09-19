@@ -4,7 +4,10 @@ const TextoMain =()=>{
         <div className="textoMain__texto">
             <h1 className="textoMain__texto--titulo">The leader in interactive vr</h1>
             <p className="textoMain__texto--parrafo">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, accusamus perspiciatis beatae velit eum quasi sapiente doloribus maxime, nesciunt iste sed, ab molestias laborum veritatis consequuntur temporibus adipisci? Dolorem, necessitatibus.
+                Founded in 2011, Loopstudios has been producing wordl-class virtual
+                reality projects for some of the best companies around the globe, Our
+                award-winning creations have transformed businesses through digital experiences
+                that bind to their brand.
             </p>
         </div>
     )

@@ -72,6 +72,7 @@ function Creations() {
               <p>MAKE IT FISHEYE</p>
             </div>
         </div>  
+        <button className='creations__cont-boton'>SEE ALL </button>
     </div>
   )
 }

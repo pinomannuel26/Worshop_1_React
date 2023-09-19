@@ -27,7 +27,15 @@ const Footer = () => {
                     <li className='footer__texto__navegacion--link'><a href="#">Support</a></li>
                 </ul>
             </nav>
-             <p className="footer__texto--parrafo">2021 Loopstudios. All rights reserved.</p>
+            
+              <div className="footer__texto__redes-sociales">
+                <img src={facebook} alt="logo-facebook" />
+                <img src={instagram} alt="logo-instagram " />
+                <img src={pinterest} alt="logo-pinterest" />
+                <img src={twitter} alt="logo-twitter" />
+              </div>
+            
+            <p className="footer__texto--parrafo">2021 Loopstudios. All rights reserved.</p>
       </div>
     </footer>
     

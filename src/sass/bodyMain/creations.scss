@@ -6,17 +6,40 @@ $mobile-screen: 375px;
     margin: 5px;
     flex-direction: column;
     align-items: center;
+    &-boton
+    {
+        display: none;
+        @media screen and (max-width: 1024px)
+        {
+            display: block;
+            width: 7rem;
+            height: 3rem;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            &:hover{
+                cursor: pointer;
+                background-color: hsl(0, 0%, 55%);
+                color: white;
+                
+            }
+        }
+    }
 }
 .creations__title{
     display: flex;
-    width: 80%;
+    width: 70%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    &_tittle{
+    h1 {
         display: flex;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 100;
     }
     &_button{
+        
         width: 100%;
         height: 100%;
         font-size: 1.5rem;
@@ -25,11 +48,37 @@ $mobile-screen: 375px;
         margin-left: 0.5rem;
     }
     button{
-        background-color: black;
-        color: white;    
+        color: black; 
+        background-color: white;
+        width: 5rem;
+        height: 2rem;
+        border-radius: 5px;   
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color:  hsl(0, 0%, 55%);
+        color: white;
+    }
+    @media screen and (max-width: 1024px)
+    {
+        display: block;
+        width: 100%;
+        h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;           
+        }
+        
+        button{
+            display: none;
+            
+        }
+
     }
 }
 .creations__images{
+    
     display: grid;
     grid-template-columns: repeat(4, 0.2fr);
     grid-gap: 10px;
@@ -42,6 +91,7 @@ $mobile-screen: 375px;
         filter: grayscale(100%);/* Invertir los colores de la imagen al pasar el ratón */
     }
     &_item{
+        
         position: relative;
         display: inline-block;
         p{
@@ -50,6 +100,13 @@ $mobile-screen: 375px;
             left: 10%;
             color: white;
             font-size: 30px;
+            @media screen and (max-width: 1024px)
+            {
+                width: 45%;
+                top: 20%;
+                left: 3%;
+                font-size: 30px;
+            }
         }
         
 
@@ -67,7 +124,10 @@ $mobile-screen: 375px;
         }
         .mobile-image{
             display: block;
+            margin-bottom: 1rem;
+            width: 85vw;
         }
+        
     }
 
 }
