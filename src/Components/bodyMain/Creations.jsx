@@ -20,6 +20,18 @@ import fisheye_mobile from '../../assets/images/mobile/image-fisheye.jpg'
 
 
 function Creations() {
+
+  const images_our_creations_desktop = [
+    [earth_desktop,earth_mobile,'OUR CREATIONS'],
+    [maquina_desktop,maquina_mobile,'DEEP EARTH'],
+    [soccer_desktop,soccer_mobile,'NIGHT ARCADE'],
+    [grid_desktop,grid_mobile,'SOCCER TEAM VR'],
+    [above_desktop,above_mobile,'THE GRID'],
+    [pocket_desktop,pocket_mobile,'FROM UP ABOVE VR'],
+    [curiosity_desktop,curiosity_mobile,'POCKET BOREALIS'],
+    [fisheye_desktop,fisheye_mobile,'THE CURIOSITY'],
+]
+
   return (
     <div className='creations__cont'>
         <div className='creations__title'>
@@ -31,46 +43,15 @@ function Creations() {
             </div>
         </div>
         <div className='creations__images'>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={earth_desktop} />
-              <img className='mobile-image' src={earth_mobile} />
-              <p>DEEP EARTH</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={maquina_desktop} />
-              <img className='mobile-image' src={maquina_mobile} />
-              <p>NIGH ARCADE</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={soccer_desktop} />
-              <img className='mobile-image' src={soccer_mobile} />
-              <p>SOCCER TEAM VR</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={grid_desktop} />
-              <img className='mobile-image' src={grid_mobile} />
-              <p>THE GRID</p>
-            </div>
-            <div className ='creations__images_item' >
-              <img className='desktop-image' src={above_desktop} />
-              <img className='mobile-image' src={above_mobile} />
-              <p>FROM UP ABOVE VR</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={pocket_desktop} />
-              <img className='mobile-image' src={pocket_mobile} />
-              <p>POCKET BOREALIS</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={curiosity_desktop} />
-              <img className='mobile-image' src={curiosity_mobile} />
-              <p>THE CURIOSITY</p>
-            </div>
-            <div className ='creations__images_item'>
-              <img className='desktop-image' src={fisheye_desktop} />
-              <img className='mobile-image' src={fisheye_mobile} />
-              <p>MAKE IT FISHEYE</p>
-            </div>
+        {images_our_creations_desktop.map((imagen,index)=>{
+          return (
+                    <div className ='creations__images_item'>
+                    <img className='desktop-image' value={imagen[0]} src={imagen[0]} />
+                    <img className='mobile-image' value={imagen[1]} src={imagen[1]} />
+                    <p>{imagen[2]}</p>
+                    </div>)
+                })
+        }
         </div>  
         <button className='creations__cont-boton'>SEE ALL </button>
     </div>
