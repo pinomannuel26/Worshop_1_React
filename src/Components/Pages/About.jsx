@@ -1,5 +1,5 @@
 import React from 'react'
-
+import NavDestock from '../Header/NavDestock'
 function About() {
   return (
     <div>
