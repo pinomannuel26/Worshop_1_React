@@ -6,6 +6,13 @@ import pinterest from "../../assets/images/icon-pinterest.svg"
 import twitter from "../../assets/images/icon-twitter.svg"
 import "../../sass/footer/footer.scss"
 const Footer = () => {
+  const items = [
+    'About',
+    'Carrers',
+    'Events',
+    'Products',
+    'Support'
+  ]
   return (
     <footer className="footer">
       <div className="footer__logos">
@@ -20,11 +27,10 @@ const Footer = () => {
       <div className="footer__texto">
             <nav>
                 <ul className='footer__texto__navegacion'>
-                    <li className='footer__texto__navegacion--link'><a href="#">Abaut</a></li>
-                    <li className='footer__texto__navegacion--link'><a href="#">Carrers</a></li>
-                    <li className='footer__texto__navegacion--link'><a href="#">Events</a></li>
-                    <li className='footer__texto__navegacion--link'><a href="#">Products</a></li>
-                    <li className='footer__texto__navegacion--link'><a href="#">Support</a></li>
+                  {items.map((item,index)=>{
+                          return <li key={index} className='navDestock__navegacion--link'><a href="#">{item}</a></li>
+                      })
+                  } 
                 </ul>
             </nav>
             

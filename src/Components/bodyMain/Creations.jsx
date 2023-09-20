@@ -45,7 +45,7 @@ function Creations() {
         <div className='creations__images'>
         {images_our_creations_desktop.map((imagen,index)=>{
           return (
-                    <div className ='creations__images_item'>
+                    <div key={index} className ='creations__images_item'>
                     <img className='desktop-image' value={imagen[0]} src={imagen[0]} />
                     <img className='mobile-image' value={imagen[1]} src={imagen[1]} />
                     <p>{imagen[2]}</p>

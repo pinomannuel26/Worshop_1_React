@@ -4,6 +4,13 @@ import Close from '../../assets/images/icon-close.svg'
 
 import '../../sass/navBarMovil/navBarMovil.scss'
 const NavBarMovil =(props)=>{
+    const items = [
+        'About',
+        'Carrers',
+        'Events',
+        'Products',
+        'Support'
+    ]
     return(
         <div className='navMovil'>
             <div className="navMovil__icon">
@@ -12,11 +19,10 @@ const NavBarMovil =(props)=>{
             </div>
             <nav >
                 <ul className='navMovil__navegacion'>
-                    <li className='navMovil__navegacion--link'><a href="#">Abaut</a></li>
-                    <li className='navMovil__navegacion--link'><a href="#">Carrers</a></li>
-                    <li className='navMovil__navegacion--link'><a href="#">Events</a></li>
-                    <li className='navMovil__navegacion--link'><a href="#">Products</a></li>
-                    <li className='navMovil__navegacion--link'><a href="#">Support</a></li>
+                    {items.map((item,index)=>{
+                            return <li key={index} className='navDestock__navegacion--link'><a href="#">{item}</a></li>
+                        })
+                    } 
                 </ul>
             </nav>
         </div>
