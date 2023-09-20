@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../../assets/images/Logo.svg'
 import MenuHamburgesa from '../../assets/images/icon-hamburger.svg'
 import '../../sass/header/navDestock.scss'
@@ -16,7 +17,7 @@ const NavDestock = (props)=>{
             <nav >
                 <ul className='navDestock__navegacion'>
                     {items.map((item,index)=>{
-                        return <li key={index} className='navDestock__navegacion--link'><a href="#">{item}</a></li>
+                        return <li key={index} className='navDestock__navegacion--link'><Link to={item}>{item}</Link></li>
                     })
                     }    
                 </ul>

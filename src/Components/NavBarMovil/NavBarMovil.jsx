@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import Logo from '../../assets/images/Logo.svg'
 import Close from '../../assets/images/icon-close.svg'
 
@@ -20,7 +21,7 @@ const NavBarMovil =(props)=>{
             <nav >
                 <ul className='navMovil__navegacion'>
                     {items.map((item,index)=>{
-                            return <li key={index} className='navDestock__navegacion--link'><a href="#">{item}</a></li>
+                            return <li key={index} className='navDestock__navegacion--link'><Link to={item}>{item}</Link></li>
                         })
                     } 
                 </ul>

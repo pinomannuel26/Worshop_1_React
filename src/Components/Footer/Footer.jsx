@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import loop from "../../assets/images/Logo.svg"
 import facebook from "../../assets/images/icon-facebook.svg"
 import instagram from "../../assets/images/icon-instagram.svg"
@@ -27,10 +28,11 @@ const Footer = () => {
       <div className="footer__texto">
             <nav>
                 <ul className='footer__texto__navegacion'>
-                  {items.map((item,index)=>{
-                          return <li key={index} className='navDestock__navegacion--link'><a href="#">{item}</a></li>
-                      })
-                  } 
+                    <li className='footer__texto__navegacion--link'><Link to='/About'>About</Link></li>
+                    <li className='footer__texto__navegacion--link'><Link to='/Carrers'>Carrers</Link></li>
+                    <li className='footer__texto__navegacion--link'><Link to='/Events'>Events</Link></li>
+                    <li className='footer__texto__navegacion--link'><Link to='/Products'>Products</Link></li>
+                    <li className='footer__texto__navegacion--link'><Link to='/Support'>Support</Link></li>
                 </ul>
             </nav>
             
