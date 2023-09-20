@@ -28,11 +28,10 @@ const Footer = () => {
       <div className="footer__texto">
             <nav>
                 <ul className='footer__texto__navegacion'>
-                    <li className='footer__texto__navegacion--link'><Link to='/About'>About</Link></li>
-                    <li className='footer__texto__navegacion--link'><Link to='/Carrers'>Carrers</Link></li>
-                    <li className='footer__texto__navegacion--link'><Link to='/Events'>Events</Link></li>
-                    <li className='footer__texto__navegacion--link'><Link to='/Products'>Products</Link></li>
-                    <li className='footer__texto__navegacion--link'><Link to='/Support'>Support</Link></li>
+                {items.map((item,index)=>{
+                          return <li key={index} className='navDestock__navegacion--link'><Link to={item}>{item}</Link></li>
+                      })
+                  } 
                 </ul>
             </nav>
             
