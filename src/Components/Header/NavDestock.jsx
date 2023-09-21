@@ -10,6 +10,7 @@ const NavDestock = (props)=>{
         'Products',
         'Support'
     ]
+    
     return(
         <div className='navDestock'>
             <h1><img className='navDestock--logo' src={Logo} alt="logo" /></h1>
